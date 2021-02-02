@@ -1,0 +1,109 @@
+.navbar {
+  background: tomato;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  span {
+    font-size: 30px;
+  }
+
+  a {
+    color: #fff;
+    padding: 0 20px;
+  }
+}
+
+.search-form {
+  color: #fff;
+
+  input {
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 1px solid #999;
+    padding: 5px 15px;
+    outline: green;
+  }
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  .user-item {
+    border: 1px solid $mediumColor;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    img {
+      width: 100px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.user-details {
+  border: 1px dashed $mediumColor;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  &__about {
+    img {
+      width: 120px;
+      border-radius: 50%;
+    }
+  }
+  &__bio {
+    &__footer {
+      line-height: 0.5;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.user-aside-info {
+  border: 1px dashed $mediumColor;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  > * {
+    border-radius: 10px;
+  }
+}
+
+.repo-item {
+  border: 1px dashed $mediumColor;
+
+  a {
+    color: rgb(31, 1, 31);
+    font-weight: bold;
+  }
+}
+
+.alert {
+  background: green;
+  color: #fff;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.not-found-record {
+  grid-column: 1 / span 3;
+}
